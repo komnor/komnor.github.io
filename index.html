@@ -1,57 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egy szuper oldal</title>
+  <title>Self-Discipline Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <style>
+    .chatbot-wrapper {
+      height: 600px;
+      width: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 0px 12px rgba(0,0,0,0.25);
+    }
+
+    .decoration {
+      background-color: #f8f9fa;
+      height: 100%;
+      position: relative;
+    }
+
+    .decoration::before {
+      content: "";
+      background-image: url("https://source.unsplash.com/featured/?motivation");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.5;
+      filter: blur(3px);
+    }
+
+    .decoration::after {
+      content: "";
+      background-image: url("https://source.unsplash.com/featured/?success");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.5;
+      filter: blur(3px);
+    }
+
+    .decoration .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .decoration h1 {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      margin: 0 0 16px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .decoration p {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/pages/product.html">Products</a>
-        </li>
-        <li>
-            <a href="/pages/orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="/about.html">About</a>
-        </li>
-    </ul>
-    <h1>Fantastic Burger</h1>
-    <ul>
-        <li>
-            Meat lover
-            <ul>
-                <li>Beef</li>
-                <li>Pork</li>
-                <li>Turkey</li> 
-            </ul>
-            
-        </li>
-        <li>Vegetarian</li>
-        <li>Piedone</li>
-    </ul>
-
-    <h2>Step of order</h2>
-    <ol>
-        <li>Choose a burger</li>
-        <li>Buy it</li>
-        <li>Give your adress</li>
-        <li>Eat it</li>
-    </ol>
-
-    <a href="https://www.tasteofhome.com/recipes/barbecued-burgers/">
-    Barbequed Burgers
-    </a>
-    <a href="pages/orders.html">Orders</a>
-    <a target="blank" href="https://www.tasteofhome.com/recipes/barbecued-burgers/">
-        <img width="56" src="img/burger.jpg" alt="tasty burger">
-    </a>
-
-   
-    
+  <div class="decoration">
+    <div class="container">
+      <h1>Self-Discipline Chatbot</h1>
+      <p>A chatbot to help you stay motivated and disciplined while achieving your goals</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 mt-5">
+        <div class="chatbot-wrapper">
+          <iframe src="https://ora.sh/embed/eb66329a-3ce5-4fc3-9726-e95f3b738654" width="100%" height="100%" style="border:0;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
